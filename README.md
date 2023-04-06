@@ -21,6 +21,8 @@ It also keeps a log of all the pointless work it has done... :-|
 When the logfile hits 1MB filesize, the script cleans it.
 
 * cpuUser.sh - Is the "waster"
+  - It basically just generates 100.000 random numbers(CPU), puts them in a list(RAM), and throw it away.
+  
 * startPointlessProcesses.sh - is the "manager". It spawns x processes, defined in its "while" loop. Currently, that is 5.
 * cron - Is just to indicate how to add this to Cron, if you want to run 5 wasters, every minute.
 
