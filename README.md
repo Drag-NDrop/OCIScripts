@@ -14,7 +14,7 @@ I do not do this, to be an ass towards Oracle. As a matter of fact, i think that
 As well as a bad solution for the climate. No matter how you look at it, the script that is designed to do nothing else, than waste ressouces. And by that, waste power to. It doesn't matter that the power is free, and delivered by Oracle. It does not come out of nowhere.
 As soon as i hear other possible strategies from OCI, i'll be adjusting this approach.
 
-Now, what does the script do?
+## Now, what does the script do?
 
 It basically just writes random numbers to /dev/null. And is scheduled to run with cron.
 It also keeps a log of all the pointless work it has done... :-|
@@ -30,7 +30,7 @@ You will need to tweak the manager(startPointlessProcesses.sh), so that the wast
 The tricks i use, is running it through crontab only. This way, i'll be able to reboot and disable the runaway wasters, by modifying crontab, in case of a system lock.
 
 
-Useful commands:
+## Useful commands:
 
 tail -f /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log
  - Monitors the log file, to see how often it completes a cycle. Useful for tweaking the system, and getting the ratio of wasters vs. crontab runs right
@@ -42,5 +42,5 @@ crontab -e
  - Edit crontab to fire at your liking. The cron help in this project, fires the job every minute.
 
 
-Notes:
+## Notes:
 I found, that for my specific needs, running the CPU waster is enough. As i already run a Docker instance, that consumes the memory i need, to stay within the parameters of OCI's guide.
