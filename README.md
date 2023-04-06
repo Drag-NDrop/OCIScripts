@@ -28,3 +28,8 @@ When the logfile hits 1MB filesize, the script cleans it.
 I dont really need questions like "Why don't you just mine bitcoin".
 As you can read on like 13 & 14, my core values tells me, that it's already wrong to abuse ressources like this. I'd never resort to Bitcoin mining.
 ... yes.. mining bitcoin would be more useful and profitable than sending random-generated numbers to nothing.. But also, more wrong. 
+
+
+Next TODOs:
+Make the script more memory intensive..
+ - Perhaps save the generated numbers in an array, or a more complex list of sorts(only goal being more overhead), so the results accumulates in RAM, vs. being garbage collected rather fast..
