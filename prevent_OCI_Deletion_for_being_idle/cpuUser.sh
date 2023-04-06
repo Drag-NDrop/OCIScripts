@@ -1,10 +1,9 @@
 #!/bin/bash
-
 now=$(date +%s)sec
 
 x=0
 
-while [ $x -le 10000 ]
+while [ $x -le 100000 ]
 do
   echo $(( $RANDOM % 5000000000000 + 100000000000000000000 )) > /dev/null
   echo $(( $RANDOM % 5000000000000 + 100000000000000000000 )) > /dev/null

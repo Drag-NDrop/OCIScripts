@@ -1,16 +1,25 @@
 #!/bin/bash
+          cd /home/ubuntu/prevent_OCI_Deletion_for_being_idle/cpuOnly
+
+          /bin/bash cpuUser.sh & disown
 
 x=0
-while [ $x -le 5 ]
-do
-  bash /home/ubuntu/prevent_OCI_Deletion_for_being_idle/cpuUser.sh & disown
-  x=$(( $x + 1 ))
-done
+currentCpuLoad=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
 
-log_size_kb=`du -k "/home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log" | cut -f1`
+if [ $currentCpuLoad < 5 ]
+then
+        while [ $x -le 10 ]
+        do
+#for memory drain enable this instead     /bin/bash ./cpuUserArray.sh & disown
+          /bin/bash cpuUser.sh & disown
+          x=$(( $x + 1 ))
+        done
+fi
 
+
+log_size_kb=`du -k /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log | cut -f1`
 if [ $log_size_kb -ge 1000 ]
 then
- echo "" > /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log
- echo "cleaned logfile"
+  echo "" > /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log
+  echo "cleaned logfile"
 fi

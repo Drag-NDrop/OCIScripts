@@ -19,7 +19,28 @@ Now, what does the script do?
 It basically just writes random numbers to /dev/null. And is scheduled to run with cron.
 It also keeps a log of all the pointless work it has done... :-|
 When the logfile hits 1MB filesize, the script cleans it.
+The script attempts to keep your usage above the requirements, outlined by OCI. This would, for the CPU waster alone, mean 10% CPU.
 
-* cpuUser.sh - Is the "waster"
+* cpuUser.sh - Is the CPU-"waster".
+* cpuUserArray.sh - Is another "waster", that consumes memory to.
 * startPointlessProcesses.sh - is the "manager". It spawns x processes, defined in its "while" loop. Currently, that is 5.
 * cron - Is just to indicate how to add this to Cron, if you want to run 5 wasters, every minute.
+
+You will need to tweak the manager(startPointlessProcesses.sh), so that the wasters does not render your system inoperable.
+The tricks i use, is running it through crontab only. This way, i'll be able to reboot and disable the runaway wasters, by modifying crontab, in case of a system lock.
+
+
+Useful commands:
+
+tail -f /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log
+ - Monitors the log file, to see how often it completes a cycle. Useful for tweaking the system, and getting the ratio of wasters vs. crontab runs right
+
+ top / htop
+  - Useful for seeing how much CPU is being used, every run
+
+crontab -e
+ - Edit crontab to fire at your liking. The cron help in this project, fires the job every minute.
+
+
+Notes:
+I found, that for my specific needs, running the CPU waster is enough. As i already run a Docker instance, that consumes the memory i need, to stay within the parameters of OCI's guide.
