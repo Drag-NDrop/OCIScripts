@@ -23,3 +23,8 @@ When the logfile hits 1MB filesize, the script cleans it.
 * cpuUser.sh - Is the "waster"
 * startPointlessProcesses.sh - is the "manager". It spawns x processes, defined in its "while" loop. Currently, that is 5.
 * cron - Is just to indicate how to add this to Cron, if you want to run 5 wasters, every minute.
+
+
+I dont really need questions like "Why don't you just mine bitcoin".
+As you can read on like 13 & 14, my core values tells me, that it's already wrong to abuse ressources like this. I'd never resort to Bitcoin mining.
+... yes.. mining bitcoin would be more useful and profitable than sending random-generated numbers to nothing.. But also, more wrong. 
