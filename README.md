@@ -27,7 +27,9 @@ The script attempts to keep your usage above the requirements, outlined by OCI. 
 * cron - Is just to indicate how to add this to Cron, if you want to run 5 wasters, every minute.
 
 You will need to tweak the manager(startPointlessProcesses.sh), so that the wasters does not render your system inoperable.
-The tricks i use, is running it through crontab only. This way, i'll be able to reboot and disable the runaway wasters, by modifying crontab, in case of a system lock.
+You might also need to tweak the wasters. The perfect scenario for you, would be to keep memory usage and CPU usage, just above 10%.
+
+One of the tricks i use, to avoid a complete deadlock, is running it through crontab only. This way, i'll be able to reboot and disable the runaway wasters, by modifying crontab, in case of a system lock.
 
 
 ## Useful commands:
