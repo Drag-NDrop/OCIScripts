@@ -1,25 +1,17 @@
 #!/bin/bash
-          cd /home/ubuntu/prevent_OCI_Deletion_for_being_idle/cpuOnly
 
-          /bin/bash cpuUser.sh & disown
+# Run this script using a "screen" (# apt install screen) ($ man screen)
 
-x=0
-currentCpuLoad=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
+cd "$(dirname "$0")" || exit
 
-if [ $currentCpuLoad < 5 ]
-then
-        while [ $x -le 10 ]
-        do
-#for memory drain enable this instead     /bin/bash ./cpuUserArray.sh & disown
-          /bin/bash cpuUser.sh & disown
-          x=$(( $x + 1 ))
-        done
-fi
+currentCpuLoad=$[100-$(vmstat 1 2|tail -1|awk '{print $15}')]
 
-
-log_size_kb=`du -k /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log | cut -f1`
-if [ $log_size_kb -ge 1000 ]
-then
-  echo "" > /home/ubuntu/prevent_OCI_Deletion_for_being_idle/log/trackPointlessWork.log
-  echo "CPU Waster solution:: cleaned logfile"
-fi
+while :
+do
+  if [ $currentCpuLoad -le 20 ]
+  then
+    /bin/bash cpuUser.sh
+    currentCpuLoad=$[100-$(vmstat 1 2|tail -1|awk '{print $15}')]
+#    echo $currentCpuLoad
+  fi
+done
