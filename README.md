@@ -1,5 +1,15 @@
 # OCIScripts
 Made to keep OCI from deleting my ForeverFree tier instance
+Alternatives to this script suite:
+Codycody made a great upgrade of the script suite, and the extensive documentation he's written, is certainly worth reading.
+As of writing, i deem his project to be more complete than the one you're browsing now. So give his repo a shot, if you're looking to solve a usecase:
+https://github.com/Codycody31/Prevent-OCI-Deletion-for-being-idle/blob/master/startPointlessProcesses.sh
+
+
+As a bright mind pointed out, Folding@Home is a great alternative to putting CPU cycles to use, rather than dissolving them in /dev/null.
+In not to long, the repo you're browsing now, will try to support a F@H Setup.
+https://foldingathome.org/
+
 
 
 I only made this script, because Oracle told me they would delete my instance in their cloud, if - during a 7 day period - the following were true:
