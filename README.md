@@ -1,6 +1,12 @@
 # OCIScripts
 Made to keep OCI from deleting my ForeverFree tier instance
 
+Latest news:
+I am currently researching better options, for current and future users of this repository. I want the processing power we waste, to matter. I no longer see this project as a viable path. And i want to avoid Oracle saying "This is why we cannot have nice free things".
+Along for the ride, is CodyCody31, and a few bright minds from the Folding@Home community.
+The research right now, has led us to the BOINC project, which many legit actors seems to use, when they have a need to tap into volunteer processing power. The main objective right now, is to find a BOINC project, which has small size Work Units, and enough work for all of us.
+Thanks to SSB22, from the Issues-section and Zeke from Folding@Home and especially CodyCody31, for helping guiding this project.
+
 Alternatives to this script suite:
 Codycody made a great upgrade of the script suite, and the extensive documentation he's written, is certainly worth reading.
 As of writing, i deem his project to be more complete than the one you're browsing now. So give his repo a shot, if you're looking to solve a usecase:
