@@ -2,7 +2,9 @@
 Made to keep OCI from deleting my ForeverFree tier instance
 
 Latest news:
-I am currently researching better options, for current and future users of this repository. I want the processing power we waste, to matter. I no longer see this project as a viable path. And i want to avoid Oracle saying "This is why we cannot have nice free things".
+I am currently researching better options, for current and future users of this repository. I want the processing power we waste, to matter. I no longer see the current solution this project offers, as a viable path. 
+And i want to avoid Oracle saying "This is why we cannot have nice free things".
+
 Along for the ride, is CodyCody31, and a few bright minds from the Folding@Home community.
 The research right now, has led us to the BOINC project, which many legit actors seems to use, when they have a need to tap into volunteer processing power. The main objective right now, is to find a BOINC project, which has small size Work Units, and enough work for all of us.
 Thanks to SSB22, from the Issues-section and Zeke from Folding@Home and especially CodyCody31, for helping guiding this project.
