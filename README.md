@@ -14,7 +14,7 @@ If you're reading this, and have an interest in helping us further the project, 
 Alternatives to this script suite:
 Codycody made a great upgrade of the script suite, and the extensive documentation he's written, is certainly worth reading.
 As of writing, i deem his project to be more complete than the one you're browsing now. So give his repo a shot, if you're looking to solve a usecase:
-https://github.com/Codycody31/Prevent-OCI-Deletion-for-being-idle/blob/master/startPointlessProcesses.sh
+https://github.com/Codycody31/Prevent-OCI-Deletion-for-being-idle/
 
 
 As a bright mind pointed out, Folding@Home is a great alternative to putting CPU cycles to use, rather than dissolving them in /dev/null.
