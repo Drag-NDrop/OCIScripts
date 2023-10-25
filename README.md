@@ -9,6 +9,8 @@ Along for the ride, is CodyCody31, and a few bright minds from the Folding@Home 
 The research right now, has led us to the BOINC project, which many legit actors seems to use, when they have a need to tap into volunteer processing power. The main objective right now, is to find a BOINC project, which has small size Work Units, and enough work for all of us.
 Thanks to SSB22, from the Issues-section and Zeke from Folding@Home and especially CodyCody31, for helping guiding this project.
 
+If you're reading this, and have an interest in helping us further the project, correct our mistakes, or in other ways contribute, please, by all means, join us on the Discord channel, Codycody set up for this exact purpose: https://discord.gg/HRNVF5Tf9a
+
 Alternatives to this script suite:
 Codycody made a great upgrade of the script suite, and the extensive documentation he's written, is certainly worth reading.
 As of writing, i deem his project to be more complete than the one you're browsing now. So give his repo a shot, if you're looking to solve a usecase:
@@ -18,8 +20,6 @@ https://github.com/Codycody31/Prevent-OCI-Deletion-for-being-idle/blob/master/st
 As a bright mind pointed out, Folding@Home is a great alternative to putting CPU cycles to use, rather than dissolving them in /dev/null.
 In not to long, the repo you're browsing now, will try to support a F@H Setup.
 https://foldingathome.org/
-
-
 
 I only made this script, because Oracle told me they would delete my instance in their cloud, if - during a 7 day period - the following were true:
 * CPU utilization for the 95th percentile is less than 10%
