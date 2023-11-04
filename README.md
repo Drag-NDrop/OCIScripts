@@ -2,6 +2,23 @@
 Made to keep OCI from deleting my ForeverFree tier instance
 
 Latest news:
+The research i previously spoke of, has culminated in a new project.
+The project is called IdleRunner, and revolves around the Boinc client from Berkeley University. It offers a quite nice control, and benefits science in the process. It's designed from a distributed computing model.
+I've read through the terms of use from Oracle, regarding ForeverFree instances. And nowhere does it state that Distributed Computing is off limits. The closest i get to finding something that would outlaw this solution, is "Cryptomining".
+Which i really don't classify this solution as.
+
+The prototype that came out of the research is now live.
+It can be found here: https://github.com/Drag-NDrop/IdleRunner
+
+The project "Universe" from the University of Warzaw, Poland, fit the usecase the best.
+It's currently in its beta test phase, and we have confirmed it works as expected on both Ubuntu and Debian instances.
+
+It basically replaces the contents of this repo 1-1, and offers much more gain to the world, than this original repo ever did.
+
+Read the readme, and if you feel up for it, try it out :-)
+
+
+Older news:
 I am currently researching better options, for current and future users of this repository. I want the processing power we waste, to matter. I no longer see the current solution this project offers, as a viable path. 
 And i want to avoid Oracle saying "This is why we cannot have nice free things".
 
