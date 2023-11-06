@@ -35,8 +35,7 @@ https://github.com/Codycody31/Prevent-OCI-Deletion-for-being-idle/
 
 
 As a bright mind pointed out, Folding@Home is a great alternative to putting CPU cycles to use, rather than dissolving them in /dev/null.
-In not to long, the repo you're browsing now, will try to support a F@H Setup.
-https://foldingathome.org/
+Check out the great advice given in this issue: https://github.com/Drag-NDrop/OCIScripts/issues/2
 
 I only made this script, because Oracle told me they would delete my instance in their cloud, if - during a 7 day period - the following were true:
 * CPU utilization for the 95th percentile is less than 10%
