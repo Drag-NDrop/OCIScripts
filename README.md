@@ -10,7 +10,7 @@ Which i really don't classify this solution as.
 The prototype that came out of the research is now live.
 It can be found here: https://github.com/Drag-NDrop/IdleRunner
 
-The project "Universe" from the University of Warzaw, Poland, fit the usecase the best.
+The project "Universe" from the University of Warsaw, Poland, fit the usecase the best.
 It's currently in its beta test phase, and we have confirmed it works as expected on both Ubuntu and Debian instances.
 
 It basically replaces the contents of this repo 1-1, and offers much more gain to the world, than this original repo ever did.
