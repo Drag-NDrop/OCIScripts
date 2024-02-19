@@ -81,3 +81,7 @@ crontab -e
 
 ## Notes:
 I found, that for my specific needs, running the CPU waster is enough. As i already run a Docker instance, that consumes the memory i need, to stay within the parameters of OCI's guide.
+
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/Drag-NDrop/OCIScripts.svg?variant=adaptive)](https://starchart.cc/Drag-NDrop/OCIScripts)
